@@ -1,0 +1,7 @@
+{
+  "packaging": [{"sku":"SEAL-9","revision":"R1","units_per_case":12,"return":"case-only","valid_to":"2026-11-01"},{"sku":"SEAL-9","revision":"R2","units_per_case":10,"return":"each","valid_from":"2026-11-01"}],
+  "receipts": [{"id":"RC1","warehouse":"W1","sku":"SEAL-9","revision":"R1","cases":5},{"id":"RC2","warehouse":"W1","sku":"SEAL-9","revision":"R2","cases":4}],
+  "requests": [{"id":"REQ1","store":"S1","sku":"SEAL-9","window":"2026-11-25","units":24,"allow_split":false,"state":"reserved"},{"id":"REQ2","store":"S2","sku":"SEAL-9","window":"2026-11-25","units":20,"allow_split":true,"state":"reserved"}],
+  "transfer": {"id":"T1","from":"W1","to":"W2","revision":"R1","cases":1,"state":"in-transit"},
+  "correction": {"receipt":"RC1","cases":1,"actual_revision":"R2","state":"pending"}
+}
